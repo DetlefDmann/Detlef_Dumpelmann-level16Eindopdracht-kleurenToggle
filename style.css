@@ -1,0 +1,83 @@
+body {
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+header {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+}
+
+header h1 {
+  position: absolute;
+  left: 40vw;
+  margin-top: 0px;
+}
+.color__home {
+  background-color: lightgray;
+  color: black;
+}
+
+.color__red {
+  background-color: red;
+  color: lightgray;
+}
+
+.color__orange {
+  background-color: orange;
+  color: black;
+}
+
+.color__blue {
+  background-color: blue;
+  color: lightgray;
+}
+
+.color__green {
+  background-color: green;
+  color: lightgray;
+}
+
+.color__yellow {
+  background-color: yellow;
+  color: #000;
+}
+
+.color__purple {
+  background-color: purple;
+  color: lightgray;
+}
+
+.color__menu {
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none;
+  width: 200px;
+
+  animation: move 0.2s ease-out;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-220px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.color__menu li,
+.color__menu--hide li {
+  border: 1px solid gray;
+  padding: 5px;
+  text-align: center;
+}
+
+.color__menu--hide {
+  display: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none;
+  width: 200px;
+}
