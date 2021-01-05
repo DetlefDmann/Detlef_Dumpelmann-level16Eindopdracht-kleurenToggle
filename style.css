@@ -68,10 +68,6 @@ main {
   padding-left: 0px;
   list-style: none;
   width: 200px;
-
-  /*animation: move 0.2s ease-out;
-  animation-direction: normal;
-  animation-fill-mode: both;*/
 }
 
 .color__form {
@@ -81,15 +77,6 @@ main {
   justify-content: center;
   margin: auto;
   width: 100vw;
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(-220px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
 }
 
 .color__menu li,
@@ -110,17 +97,4 @@ main {
   padding: 0px;
   list-style: none;
   width: 200px;
-
-  /*animation: move1 0.2s ease-out;
-  animation-direction: normal;
-  animation-fill-mode: both;*/
-}
-
-@keyframes move1 {
-  0% {
-    transform: translateX(220px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
 }
