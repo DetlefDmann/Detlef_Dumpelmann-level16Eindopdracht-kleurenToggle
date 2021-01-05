@@ -48,14 +48,19 @@ header h1 {
 }
 
 .color__menu {
+  position: absolute;
+  left: -20px;
+  top: 35px;
+  transition: 0.2s;
+  transition-delay: 0.25s;
   margin-left: 0px;
   padding-left: 0px;
   list-style: none;
   width: 200px;
 
-  animation: move 0.2s ease-out;
+  /*animation: move 0.2s ease-out;
   animation-direction: normal;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
 }
 
 @keyframes move {
@@ -69,15 +74,33 @@ header h1 {
 
 .color__menu li,
 .color__menu--hide li {
+  margin: 0;
   border: 1px solid gray;
   padding: 5px;
   text-align: center;
 }
 
 .color__menu--hide {
-  display: none;
-  margin-left: 0px;
-  padding-left: 0px;
+  position: absolute;
+  left: -220px;
+  top: 35px;
+  transition: 0.2s;
+  transition-delay: 0.25s;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
   width: 200px;
+
+  /*animation: move1 0.2s ease-out;
+  animation-direction: normal;
+  animation-fill-mode: both;*/
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateX(220px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
