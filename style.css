@@ -1,4 +1,5 @@
 body {
+  display: flex;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 header {
@@ -7,11 +8,21 @@ header {
   width: 100vw;
 }
 
-header h1 {
+h1 {
   position: absolute;
-  left: 40vw;
-  margin-top: 0px;
+  display: flex;
+  top: -10rem;
+  justify-content: center;
+  margin: auto;
+  width: 100vw;
 }
+
+main {
+  position: relative;
+  top: 50vh;
+  width: 100%;
+}
+
 .color__home {
   background-color: lightgray;
   color: black;
@@ -61,6 +72,15 @@ header h1 {
   /*animation: move 0.2s ease-out;
   animation-direction: normal;
   animation-fill-mode: both;*/
+}
+
+.color__form {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100vw;
 }
 
 @keyframes move {
