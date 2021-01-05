@@ -154,7 +154,6 @@ colorPurple.addEventListener("click", function () {
 
 document.addEventListener("keydown", (event) => {
   keyHandler(event.key);
-  console.log(event.key);
 });
 
 checkHome.addEventListener("click", function () {
