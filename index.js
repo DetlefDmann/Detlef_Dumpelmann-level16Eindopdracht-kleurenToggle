@@ -1,12 +1,12 @@
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".color__menu--hide");
-const colorHome = document.querySelector(".color__home");
-const colorRed = document.querySelector(".color__red");
-const colorOrange = document.querySelector(".color__orange");
-const colorYellow = document.querySelector(".color__yellow");
-const colorGreen = document.querySelector(".color__green");
-const colorBlue = document.querySelector(".color__blue");
-const colorPurple = document.querySelector(".color__purple");
+const colorHome = document.querySelector(".color--home");
+const colorRed = document.querySelector(".color--red");
+const colorOrange = document.querySelector(".color--orange");
+const colorYellow = document.querySelector(".color--yellow");
+const colorGreen = document.querySelector(".color--green");
+const colorBlue = document.querySelector(".color--blue");
+const colorPurple = document.querySelector(".color--purple");
 const checkHome = document.getElementById("gray");
 const checkRed = document.getElementById("red");
 const checkOrange = document.getElementById("orange");
@@ -29,13 +29,13 @@ const setColor = (color) => {
   document
     .querySelector("body")
     .classList.remove(
-      "color__home",
-      "color__red",
-      "color__orange",
-      "color__yellow",
-      "color__green",
-      "color__blue",
-      "color__purple"
+      "color--home",
+      "color--red",
+      "color--orange",
+      "color--yellow",
+      "color--green",
+      "color--blue",
+      "color--purple"
     );
   document.querySelector("body").classList.add(color);
 };
@@ -78,49 +78,49 @@ const keyHandler = (e) => {
 const colorHandler = (setEvent) => {
   switch (setEvent) {
     case "gray":
-      setColor("color__home");
+      setColor("color--home");
       hideMenu();
       setText("gray");
       document.getElementById(setEvent).checked = true;
       break;
     case "red":
-      setColor("color__red");
+      setColor("color--red");
       hideMenu();
       setText("red");
       document.getElementById(setEvent).checked = true;
       break;
     case "orange":
-      setColor("color__orange");
+      setColor("color--orange");
       hideMenu();
       setText("orange");
       document.getElementById(setEvent).checked = true;
       break;
     case "yellow":
-      setColor("color__yellow");
+      setColor("color--yellow");
       hideMenu();
       setText("yellow");
       document.getElementById(setEvent).checked = true;
       break;
     case "green":
-      setColor("color__green");
+      setColor("color--green");
       hideMenu();
       setText("green");
       document.getElementById(setEvent).checked = true;
       break;
     case "blue":
-      setColor("color__blue");
+      setColor("color--blue");
       hideMenu();
       setText("blue");
       document.getElementById(setEvent).checked = true;
       break;
     case "purple":
-      setColor("color__purple");
+      setColor("color--purple");
       hideMenu();
       setText("purple");
       document.getElementById(setEvent).checked = true;
       break;
     default:
-      setColor("color__home");
+      setColor("color--home");
       hideMenu();
       setText("gray");
       document.getElementById("gray").checked = true;

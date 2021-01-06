@@ -23,37 +23,37 @@ main {
   width: 100%;
 }
 
-.color__home {
+.color--home {
   background-color: lightgray;
   color: black;
 }
 
-.color__red {
+.color--red {
   background-color: red;
   color: lightgray;
 }
 
-.color__orange {
+.color--orange {
   background-color: orange;
   color: black;
 }
 
-.color__blue {
+.color--blue {
   background-color: blue;
   color: lightgray;
 }
 
-.color__green {
+.color--green {
   background-color: green;
   color: lightgray;
 }
 
-.color__yellow {
+.color--yellow {
   background-color: yellow;
   color: #000;
 }
 
-.color__purple {
+.color--purple {
   background-color: purple;
   color: lightgray;
 }
@@ -68,6 +68,10 @@ main {
   padding-left: 0px;
   list-style: none;
   width: 200px;
+}
+
+.color__menu:hover {
+  cursor: pointer;
 }
 
 .color__form {
