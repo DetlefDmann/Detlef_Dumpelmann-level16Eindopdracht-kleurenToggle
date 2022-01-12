@@ -17,6 +17,15 @@ h1 {
   width: 100vw;
 }
 
+h2 {
+  position: absolute;
+  display: flex;
+  top: 10rem;
+  margin: auto;
+  justify-content: center;
+  width: 100vw;
+}
+
 main {
   position: relative;
   top: 50vh;
